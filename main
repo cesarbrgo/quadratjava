@@ -1,0 +1,18 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+    public static final String MSG1="introdueix el costat del quadrat: ";
+    public static final String MSG2="introdueix el color del quadrat: ";
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        Quadrat qua= new Quadrat();
+        System.out.println(MSG1);
+        qua.setSide(sc.nextInt());
+        System.out.println(MSG2);
+        qua.setColor(sc.next());
+        System.out.println ("el area es: "+qua.calcArea());
+        System.out.println(qua.getColor());
+    }
+}
